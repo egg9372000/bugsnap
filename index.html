@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BugSnap — 100% Local Visual Bug Reporter &amp; Screenshot Annotator</title>
+  <style>
+    :root { --bg:#070b12; --surface:#111827; --border:rgba(148,163,184,0.16); --text:#f8fafc; --muted:#94a3b8; --emerald:#10b981; --coral:#ef4444; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:radial-gradient(circle at 20% 0%,rgba(16,185,129,0.16),transparent 45%),radial-gradient(circle at 80% 10%,rgba(239,68,68,0.12),transparent 40%),var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif; line-height:1.6; }
+    .container { max-width:1020px; margin:0 auto; padding:0 24px; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:20px 0; border-bottom:1px solid var(--border); }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:18px; text-decoration:none; color:#fff; }
+    .brand img { width:32px; height:32px; border-radius:8px; }
+    .links { display:flex; gap:20px; }
+    .links a { color:var(--muted); text-decoration:none; font-size:14px; }
+    .links a:hover { color:#fff; }
+    .hero { text-align:center; padding:66px 0 44px; }
+    .pill { display:inline-block; padding:5px 12px; border-radius:999px; background:rgba(16,185,129,0.14); border:1px solid rgba(16,185,129,0.35); color:#6ee7b7; font-size:12px; font-weight:700; margin-bottom:16px; }
+    h1 { font-size:clamp(32px,5vw,52px); line-height:1.12; max-width:780px; margin:0 auto 16px; }
+    .hero p { font-size:17px; color:var(--muted); max-width:620px; margin:0 auto 28px; }
+    .cta { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:40px; }
+    .btn { padding:12px 22px; border-radius:10px; font-weight:700; text-decoration:none; font-size:15px; }
+    .btn-primary { background:linear-gradient(135deg,var(--emerald),var(--coral)); color:#fff; box-shadow:0 10px 30px rgba(16,185,129,0.28); }
+    .btn-sec { background:var(--surface); color:#e2e8f0; border:1px solid var(--border); }
+    .hero-img { width:100%; border-radius:16px; border:1px solid var(--border); box-shadow:0 24px 60px rgba(0,0,0,0.6); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; padding:48px 0; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px; }
+    .card h3 { font-size:16px; margin-bottom:6px; }
+    .card p { font-size:14px; color:var(--muted); }
+    footer { border-top:1px solid var(--border); padding:28px 0; text-align:center; color:var(--muted); font-size:13px; }
+    footer a { color:#94a3b8; margin:0 10px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#"><img src="icon128.png" alt="BugSnap" /><span>BugSnap</span></a>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://eggcellent20.gumroad.com/l/hcneur" target="_blank" rel="noopener">Get Pro ($14)</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="pill">100% LOCAL QA BUG REPORTER · REPLACE $49–$199/MO CLOUD TOOLS</div>
+      <h1>Annotate bugs, redact sensitive data &amp; export dev-ready reports in 10 seconds.</h1>
+      <p>Capture screenshots with highlight boxes, arrows, true mosaic redaction, auto-captured viewport/browser metadata, live console errors, and 1-click GitHub, Linear, Jira &amp; Notion Markdown — without uploading private client data to any cloud server.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://eggcellent20.gumroad.com/l/hcneur" target="_blank" rel="noopener">Get BugSnap Pro — $14 Lifetime</a>
+        <a class="btn btn-sec" href="privacy.html">100% Local &amp; Private</a>
+      </div>
+      <img class="hero-img" src="hero-banner.png" alt="BugSnap Visual Bug Reporter & Screenshot Annotator" />
+    </section>
+    <section class="grid">
+      <div class="card"><h3>True Pixelate Privacy Redaction</h3><p>Irreversibly mosaic-blur customer emails, API keys, and financial figures right on the canvas before sharing.</p></div>
+      <div class="card"><h3>Live Console Error Capture</h3><p>Attach the on-demand recorder to catch console.error, warnings, and uncaught exceptions automatically.</p></div>
+      <div class="card"><h3>GitHub, Linear, Jira &amp; Notion</h3><p>Copy perfectly structured Markdown bug reports with environment specs and reproduction templates in 1 click.</p></div>
+      <div class="card"><h3>Pay Once, Zero Cloud Lock-in</h3><p>No $149/month enterprise seats or view caps. Everything stays 100% local in your browser forever.</p></div>
+    </section>
+    <footer>© 2026 BugSnap · <a href="privacy.html">Privacy Policy</a></footer>
+  </div>
+</body>
+</html>
